@@ -57,6 +57,41 @@ Generate static pages at build time:
 npm run prerender
 ```
 
+## Deployment
+
+This Angular SSR application can be deployed to various hosting platforms:
+
+### Vercel (Recommended - Free)
+
+1. Go to [vercel.com](https://vercel.com) and sign up/login
+2. Click "New Project" and import your GitHub repository
+3. Vercel will automatically detect the Angular app
+4. Click "Deploy" - your app will be live in minutes!
+
+**Your app will be available at:** `https://your-project-name.vercel.app`
+
+### Netlify (Free)
+
+1. Go to [netlify.com](https://netlify.com) and sign up/login
+2. Click "Add new site" → "Import an existing project"
+3. Connect your GitHub repository
+4. Build command: `npm run build:ssr`
+5. Publish directory: `dist/angular-app/browser`
+6. Click "Deploy site"
+
+**Your app will be available at:** `https://your-project-name.netlify.app`
+
+### Railway (Free)
+
+1. Go to [railway.app](https://railway.app) and sign up/login
+2. Click "New Project" → "Deploy from GitHub repo"
+3. Select your repository
+4. Railway will auto-detect Node.js
+5. Add build command: `npm run build:ssr`
+6. Add start command: `npm run serve:ssr:angular-app`
+
+**Note:** Configuration files (`vercel.json` and `netlify.toml`) are already included in the project.
+
 ## Project Structure
 
 ```
